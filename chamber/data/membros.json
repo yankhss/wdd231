@@ -1,0 +1,103 @@
+{
+  "membros": [
+    {
+      "nome": "Agro Campos Gerais",
+      "categoria": "Agronegócio",
+      "endereco": "Av. Visconde de Taunay, 1450 – Ronda",
+      "telefone": "(42) 3000-0101",
+      "site": "https://example.com/agro-campos",
+      "imagem": "logo-agro-campos.webp",
+      "nivel": 3,
+      "desde": 2009,
+      "descricao": "Armazenagem de grãos e assistência técnica a produtores de soja, milho e trigo da região."
+    },
+    {
+      "nome": "RodoLog Transportes",
+      "categoria": "Logística",
+      "endereco": "Rod. BR-376, km 502 – Distrito Industrial",
+      "telefone": "(42) 3000-0102",
+      "site": "https://example.com/rodolog",
+      "imagem": "logo-rodolog.webp",
+      "nivel": 3,
+      "desde": 2012,
+      "descricao": "Transporte rodoviário de cargas entre os Campos Gerais, Curitiba e o Porto de Paranaguá."
+    },
+    {
+      "nome": "Hotel Vila dos Campos",
+      "categoria": "Hotelaria e turismo",
+      "endereco": "Rua Balduíno Taques, 820 – Centro",
+      "telefone": "(42) 3000-0103",
+      "site": "https://example.com/hotel-vila",
+      "imagem": "logo-hotel-vila.webp",
+      "nivel": 3,
+      "desde": 2015,
+      "descricao": "Hotel central com sala de eventos para 120 pessoas e pacotes para Vila Velha."
+    },
+    {
+      "nome": "Metalúrgica Princesa",
+      "categoria": "Indústria",
+      "endereco": "Rua Engenheiro Schamber, 77 – Oficinas",
+      "telefone": "(42) 3000-0104",
+      "site": "https://example.com/metal-princesa",
+      "imagem": "logo-metal-princesa.webp",
+      "nivel": 2,
+      "desde": 2017,
+      "descricao": "Estruturas metálicas, caldeiraria e manutenção industrial sob medida."
+    },
+    {
+      "nome": "Cervejaria Arenito",
+      "categoria": "Alimentos e bebidas",
+      "endereco": "Av. Ernesto Vilela, 1210 – Nova Rússia",
+      "telefone": "(42) 3000-0105",
+      "site": "https://example.com/cervejaria-arenito",
+      "imagem": "logo-cervejaria-arenito.webp",
+      "nivel": 2,
+      "desde": 2019,
+      "descricao": "Cervejaria artesanal com receitas inspiradas na tradição alemã dos Campos Gerais."
+    },
+    {
+      "nome": "Pixel Campos Tecnologia",
+      "categoria": "Tecnologia",
+      "endereco": "Av. Carlos Cavalcanti, 4748 – Uvaranas",
+      "telefone": "(42) 3000-0106",
+      "site": "https://example.com/pixel-campos",
+      "imagem": "logo-pixel-campos.webp",
+      "nivel": 2,
+      "desde": 2021,
+      "descricao": "Desenvolvimento de sites, aplicativos e sistemas de gestão para pequenas empresas."
+    },
+    {
+      "nome": "Café do Tropeiro",
+      "categoria": "Alimentos e bebidas",
+      "endereco": "Rua XV de Novembro, 301 – Centro",
+      "telefone": "(42) 3000-0107",
+      "site": "https://example.com/cafe-tropeiro",
+      "imagem": "logo-cafe-tropeiro.webp",
+      "nivel": 2,
+      "desde": 2020,
+      "descricao": "Cafeteria com torra própria e cardápio de pratos tropeiros no centro histórico."
+    },
+    {
+      "nome": "Ferragista Uvaranas",
+      "categoria": "Comércio",
+      "endereco": "Av. General Carlos Cavalcanti, 1980 – Uvaranas",
+      "telefone": "(42) 3000-0108",
+      "site": "https://example.com/ferragista-uvaranas",
+      "imagem": "logo-ferragista-uvaranas.webp",
+      "nivel": 2,
+      "desde": 2016,
+      "descricao": "Ferragens, ferramentas e materiais elétricos com entrega para obras na cidade."
+    },
+    {
+      "nome": "Instituto Semear",
+      "categoria": "Organização sem fins lucrativos",
+      "endereco": "Rua Coronel Dulcídio, 560 – Centro",
+      "telefone": "(42) 3000-0109",
+      "site": "https://example.com/instituto-semear",
+      "imagem": "logo-instituto-semear.webp",
+      "nivel": 1,
+      "desde": 2018,
+      "descricao": "Cursos gratuitos de qualificação profissional para jovens e adultos de Ponta Grossa."
+    }
+  ]
+}

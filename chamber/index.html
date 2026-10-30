@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início | Câmara de Comércio de Ponta Grossa</title>
+  <meta name="description" content="Câmara de Comércio de Ponta Grossa: eventos, clima, membros em destaque e como se associar.">
+  <meta name="author" content="Yankha">
+  <meta property="og:title" content="Início | Câmara de Comércio de Ponta Grossa">
+  <meta property="og:description" content="Câmara de Comércio de Ponta Grossa: eventos, clima, membros em destaque e como se associar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-lg.webp">
+  <link rel="icon" href="images/brand-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,700..800&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <a class="marca" href="index.html">
+        <img src="images/brand-mark.svg" alt="" width="48" height="48">
+        <span class="marca-nome">Câmara de Comércio <span>de Ponta Grossa, Paraná</span></span>
+      </a>
+      <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="navegacao" aria-label="Abrir menu">
+        <svg class="icone-abrir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icone-fechar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="navegacao" id="navegacao" aria-label="Principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="diretorio.html">Diretório</a></li>
+        <li><a href="associe-se.html">Associe-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="heroi" aria-labelledby="titulo-heroi">
+      <picture>
+        <source media="(min-width: 40em)" srcset="images/hero-lg.webp" width="1600" height="800">
+        <img src="images/hero-sm.webp" alt="Ilustração da Taça, formação de arenito em camadas do Parque de Vila Velha, cercada por araucárias" width="800" height="400" fetchpriority="high">
+      </picture>
+      <div class="heroi-texto">
+        <h1 id="titulo-heroi">Negócios que crescem nos Campos Gerais</h1>
+        <p>A Câmara reúne empresas e organizações de Ponta Grossa para gerar contatos, capacitação e visibilidade.</p>
+        <div class="heroi-acoes">
+          <a class="botao botao-primario" href="associe-se.html">Quero me associar</a>
+          <a class="botao botao-secundario" href="diretorio.html">Conhecer os membros</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container secao grade-inicio">
+      <section class="painel eventos" aria-labelledby="titulo-eventos">
+        <h2 id="titulo-eventos">Próximos eventos</h2>
+        <ul class="lista-eventos">
+          <li>
+            <time class="data-evento" datetime="2026-11-05T07:30"><span class="dia">05</span><span class="mes">nov</span></time>
+            <div>
+              <h3>Café de negócios: crédito para pequenas empresas</h3>
+              <p>Hotel Vila dos Campos, 7h30. Aberto a associados e convidados.</p>
+            </div>
+          </li>
+          <li>
+            <time class="data-evento" datetime="2026-11-19T19:00"><span class="dia">19</span><span class="mes">nov</span></time>
+            <div>
+              <h3>Oficina: vender mais pelas redes sociais</h3>
+              <p>Auditório da Câmara, 19h. Vagas limitadas.</p>
+            </div>
+          </li>
+          <li>
+            <time class="data-evento" datetime="2026-12-03T12:00"><span class="dia">03</span><span class="mes">dez</span></time>
+            <div>
+              <h3>Almoço de fim de ano dos associados</h3>
+              <p>Café do Tropeiro, 12h. Confirme presença até 28 de novembro.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="painel" aria-labelledby="titulo-clima">
+        <h2 id="titulo-clima">Clima agora</h2>
+        <div class="clima-atual" id="clima-atual" aria-live="polite">
+          <p class="carregando">Buscando o tempo em Ponta Grossa…</p>
+        </div>
+      </section>
+
+      <section class="painel" aria-labelledby="titulo-previsao">
+        <h2 id="titulo-previsao">Próximos 3 dias</h2>
+        <ul class="previsao" id="previsao">
+          <li class="carregando">Carregando previsão…</li>
+        </ul>
+        <p class="fonte-dados">Dados: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></p>
+      </section>
+    </div>
+
+    <section class="faixa-numeros" aria-labelledby="titulo-numeros">
+      <div class="container">
+        <h2 id="titulo-numeros">Ponta Grossa em números</h2>
+        <dl class="numeros">
+          <div><dt>Habitantes (Censo 2022)</dt><dd>358 mil</dd></div>
+          <div><dt>Posição entre as cidades do Paraná</dt><dd>4ª maior</dd></div>
+          <div><dt>Distância de Curitiba</dt><dd>114 km</dd></div>
+          <div><dt>Fundação da freguesia</dt><dd>1823</dd></div>
+        </dl>
+        <a href="sobre.html">Conheça a história e os lugares da cidade</a>
+      </div>
+    </section>
+
+    <section class="container secao" aria-labelledby="titulo-destaques">
+      <h2 id="titulo-destaques">Membros em destaque</h2>
+      <p>Associados Ouro e Prata, sorteados a cada visita.</p>
+      <div class="destaques" id="destaques" aria-live="polite">
+        <p class="carregando">Carregando destaques…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-grade">
+      <section>
+        <h2>Câmara de Comércio de Ponta Grossa</h2>
+        <address>
+          Rua Comendador Miró, 100 – Centro<br>
+          Ponta Grossa – PR, 84010-000<br>
+          <a href="tel:4230000100">(42) 3000-0100</a><br>
+          <a href="mailto:contato@camarapg.example">contato@camarapg.example</a>
+        </address>
+      </section>
+      <section>
+        <h2>Acompanhe</h2>
+        <ul>
+          <li><a href="https://example.com/instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://example.com/linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://example.com/youtube" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sobre este site</h2>
+        <p>Projeto acadêmico de desenvolvimento web por Yankha. Empresas, eventos e contatos são fictícios.</p>
+      </section>
+    </div>
+    <div class="rodape-base">
+      <div class="container">
+        <p>&copy; <span id="ano-atual">2026</span> Câmara de Comércio de Ponta Grossa</p>
+        <p>Última modificação: <time id="ultima-modificacao"></time></p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="scripts/inicio.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | Câmara de Comércio de Ponta Grossa</title>
+  <meta name="description" content="História, dados atuais e lugares para conhecer em Ponta Grossa, nos Campos Gerais do Paraná.">
+  <meta name="author" content="Yankha">
+  <meta property="og:title" content="Sobre | Câmara de Comércio de Ponta Grossa">
+  <meta property="og:description" content="História, dados atuais e lugares para conhecer em Ponta Grossa, nos Campos Gerais do Paraná.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-lg.webp">
+  <link rel="icon" href="images/brand-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,700..800&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <a class="marca" href="index.html">
+        <img src="images/brand-mark.svg" alt="" width="48" height="48">
+        <span class="marca-nome">Câmara de Comércio <span>de Ponta Grossa, Paraná</span></span>
+      </a>
+      <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="navegacao" aria-label="Abrir menu">
+        <svg class="icone-abrir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icone-fechar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="navegacao" id="navegacao" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+        <li><a href="diretorio.html">Diretório</a></li>
+        <li><a href="associe-se.html">Associe-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container">
+    <aside class="aviso-visita" id="aviso-visita" role="status" hidden>
+      <p id="texto-visita"></p>
+      <button type="button" id="fechar-aviso" aria-label="Fechar mensagem">&times;</button>
+    </aside>
+
+    <header class="cabeca-pagina">
+      <h1>Sobre Ponta Grossa</h1>
+      <p>A Princesa dos Campos fica no Segundo Planalto Paranaense, a 114 km de Curitiba, e cresceu no cruzamento de caminhos de tropeiros e de trilhos de trem.</p>
+    </header>
+
+    <div class="colunas-sobre">
+      <section aria-labelledby="titulo-historia">
+        <h2 id="titulo-historia">História</h2>
+        <p>A cidade nasceu como pouso no Caminho das Tropas, rota que levava gado e mulas do Sul até as feiras de São Paulo. Depois vieram a ferrovia, os imigrantes e a indústria.</p>
+        <ol class="linha-tempo">
+          <li>
+            <time datetime="1823-09-15">1823</time>
+            <p>Em 15 de setembro é criada a freguesia de Ponta Grossa, sob a proteção de Sant'Ana, então ligada à vila de Castro.</p>
+          </li>
+          <li>
+            <time datetime="1855-04-07">1855</time>
+            <p>Lei provincial eleva Ponta Grossa a vila e a separa de Castro.</p>
+          </li>
+          <li>
+            <time datetime="1862-03-24">1862</time>
+            <p>Em 24 de março, Ponta Grossa recebe a condição de cidade.</p>
+          </li>
+          <li>
+            <time datetime="1871">1871</time>
+            <p>O município passa a se chamar Pitangui por um ano; o nome Ponta Grossa volta em 1872.</p>
+          </li>
+          <li>
+            <time datetime="1894">1894</time>
+            <p>Chega a ferrovia, ligando a cidade a Curitiba e Paranaguá. Ponta Grossa vira entroncamento ferroviário do Sul.</p>
+          </li>
+          <li>
+            <time datetime="1953">1953</time>
+            <p>Vila Velha se torna o primeiro parque estadual do Paraná.</p>
+          </li>
+        </ol>
+      </section>
+
+      <div>
+        <section aria-labelledby="titulo-dados">
+          <h2 id="titulo-dados">Dados atuais</h2>
+          <dl class="dados-demograficos">
+            <div><dt>População (Censo 2022)</dt><dd>358.371</dd></div>
+            <div><dt>Entre as cidades do Paraná</dt><dd>4ª maior</dd></div>
+            <div><dt>Área territorial</dt><dd>2.054 km²</dd></div>
+            <div><dt>Altitude da sede</dt><dd>975 m</dd></div>
+            <div><dt>PIB per capita (2021)</dt><dd>R$ 54,3 mil</dd></div>
+            <div><dt>Quem nasce aqui é</dt><dd>ponta-grossense</dd></div>
+          </dl>
+          <p class="fonte">Fonte: IBGE, Censo Demográfico 2022 e Cidades@.</p>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-recentes">
+          <h2 id="titulo-recentes">Eventos recentes</h2>
+          <ul class="eventos-recentes">
+            <li><strong>Maio de 2026:</strong> a Maratona Internacional de Ponta Grossa reuniu corredores em provas de 10 km, meia maratona e maratona.</li>
+            <li><strong>Setembro de 2026:</strong> a cidade celebrou 203 anos da criação da freguesia, comemorados todo 15 de setembro.</li>
+            <li><strong>Novembro:</strong> época da Münchenfest, festa de tradição alemã no Centro de Eventos, uma das maiores do gênero no Paraná.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <section class="secao" aria-labelledby="titulo-lugares">
+      <h2 id="titulo-lugares">Lugares para conhecer</h2>
+      <p>De arenitos esculpidos pelo tempo a casarões do centro histórico, estes são os passeios que mais indicamos a quem chega à cidade.</p>
+      <div class="montagem" id="montagem" aria-live="polite">
+        <p class="carregando">Carregando lugares…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-grade">
+      <section>
+        <h2>Câmara de Comércio de Ponta Grossa</h2>
+        <address>
+          Rua Comendador Miró, 100 – Centro<br>
+          Ponta Grossa – PR, 84010-000<br>
+          <a href="tel:4230000100">(42) 3000-0100</a><br>
+          <a href="mailto:contato@camarapg.example">contato@camarapg.example</a>
+        </address>
+      </section>
+      <section>
+        <h2>Acompanhe</h2>
+        <ul>
+          <li><a href="https://example.com/instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://example.com/linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://example.com/youtube" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sobre este site</h2>
+        <p>Projeto acadêmico de desenvolvimento web por Yankha. Empresas, eventos e contatos são fictícios.</p>
+      </section>
+    </div>
+    <div class="rodape-base">
+      <div class="container">
+        <p>&copy; <span id="ano-atual">2026</span> Câmara de Comércio de Ponta Grossa</p>
+        <p>Última modificação: <time id="ultima-modificacao"></time></p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="scripts/sobre.mjs"></script>
+</body>
+</html>

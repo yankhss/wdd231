@@ -1,0 +1,68 @@
+{
+  "lugares": [
+    {
+      "id": "vila-velha",
+      "nome": "Parque Estadual de Vila Velha",
+      "local": "BR-376, cerca de 20 km do centro",
+      "descricao": "Primeiro parque estadual do Paraná, criado em 1953. Formações de arenito esculpidas pelo vento e pela chuva ao longo de milhões de anos.",
+      "imagem": "vila-velha.webp",
+      "alt": "Ilustração de formações de arenito em camadas com araucárias ao redor"
+    },
+    {
+      "id": "buraco-do-padre",
+      "nome": "Buraco do Padre",
+      "local": "Distrito de Itaiacoca",
+      "descricao": "Uma furna de paredes altas onde uma cachoeira cai por uma abertura no teto de rocha. Confira horários e regras de visitação antes de ir.",
+      "imagem": "buraco-do-padre.webp",
+      "alt": "Ilustração de cachoeira caindo dentro de uma caverna aberta no topo"
+    },
+    {
+      "id": "furnas",
+      "nome": "Furnas",
+      "local": "Dentro do Parque de Vila Velha",
+      "descricao": "Poços naturais gigantes abertos no arenito, com água no fundo. Mirantes na borda mostram a profundidade das paredes.",
+      "imagem": "furnas.webp",
+      "alt": "Ilustração de um poço natural circular com água no fundo, cercado de campo"
+    },
+    {
+      "id": "lagoa-dourada",
+      "nome": "Lagoa Dourada",
+      "local": "Dentro do Parque de Vila Velha",
+      "descricao": "Ligada às furnas pelo lençol de água subterrâneo. Diz-se que o nome vem do brilho dourado da água ao fim da tarde.",
+      "imagem": "lagoa-dourada.webp",
+      "alt": "Ilustração de uma lagoa refletindo o sol dourado, com araucárias na margem"
+    },
+    {
+      "id": "cachoeira-mariquinha",
+      "nome": "Cachoeira da Mariquinha",
+      "local": "Distrito de Itaiacoca",
+      "descricao": "Queda d'água em degraus de rocha com poço para banho, cercada por mata nativa. Muito procurada no verão.",
+      "imagem": "cachoeira-mariquinha.webp",
+      "alt": "Ilustração de cachoeira larga descendo em degraus de pedra até um poço"
+    },
+    {
+      "id": "estacao-saudade",
+      "nome": "Estação Saudade",
+      "local": "Centro",
+      "descricao": "Antiga estação ferroviária restaurada, hoje biblioteca e espaço cultural gratuito. Lembra o tempo em que a cidade era entroncamento de trilhos.",
+      "imagem": "estacao-saudade.webp",
+      "alt": "Ilustração de um prédio de estação ferroviária com relógio e trilhos à frente"
+    },
+    {
+      "id": "mansao-vila-hilda",
+      "nome": "Mansão Vila Hilda",
+      "local": "Centro",
+      "descricao": "Casarão histórico que abriga o Museu Campos Gerais, com acervo sobre o tropeirismo e a formação da região.",
+      "imagem": "mansao-vila-hilda.webp",
+      "alt": "Ilustração de um casarão de dois andares com torre lateral e jardim"
+    },
+    {
+      "id": "parque-ambiental",
+      "nome": "Parque Ambiental",
+      "local": "Centro",
+      "descricao": "Área verde no coração da cidade, com lago, chafariz e espaço para caminhar e descansar.",
+      "imagem": "parque-ambiental.webp",
+      "alt": "Ilustração de um lago com chafariz cercado de gramado e araucárias"
+    }
+  ]
+}
