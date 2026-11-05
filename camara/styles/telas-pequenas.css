@@ -1,0 +1,481 @@
+/* =========================================================
+   Câmara de Comércio de Ponta Grossa
+   telas-pequenas.css — estilos base (mobile-first, a partir de 320px)
+   As mudanças para telas maiores ficam em telas-grandes.css
+   ========================================================= */
+
+:root {
+  /* Paleta dos Campos Gerais */
+  --araucaria: #1f4d3a;
+  --araucaria-escuro: #143426;
+  --dourado: #e0a526;
+  --dourado-claro: #f6e3b4;
+  --campo: #f3f6f2;
+  --branco: #ffffff;
+  --tinta: #18221d;
+  --cinza-texto: #4f5a53;
+  --linha: #d6ded8;
+
+  --fonte-titulo: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --fonte-texto: "Source Sans 3", "Segoe UI", Roboto, Arial, sans-serif;
+
+  --largura: 72rem;
+  --raio: 6px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--tinta);
+  background-color: var(--campo);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: var(--fonte-titulo);
+  font-stretch: 112%;
+  line-height: 1.12;
+  margin: 0 0 0.5em;
+  color: var(--araucaria-escuro);
+}
+
+h1 {
+  font-size: clamp(2rem, 7vw, 3rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+p {
+  margin: 0 0 1em;
+  max-width: 68ch;
+}
+
+a {
+  color: var(--araucaria);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--araucaria-escuro);
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--dourado);
+  outline-offset: 3px;
+}
+
+.container {
+  width: min(100% - 2rem, var(--largura));
+  margin-inline: auto;
+}
+
+.pular-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background-color: var(--dourado);
+  color: var(--tinta);
+  font-weight: 700;
+}
+
+.pular-link:focus {
+  top: 1rem;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: var(--araucaria);
+  color: var(--branco);
+}
+
+.cabecalho-interno {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.75rem;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.marca:hover {
+  color: var(--branco);
+}
+
+.marca img {
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--campo);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.marca-nome {
+  font-family: var(--fonte-titulo);
+  font-stretch: 112%;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.marca-nome span {
+  display: block;
+  font-family: var(--fonte-texto);
+  font-stretch: 100%;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--dourado-claro);
+}
+
+/* ---------- Menu hambúrguer ---------- */
+.menu-botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 2px solid var(--campo);
+  border-radius: var(--raio);
+  background: transparent;
+  color: var(--branco);
+  cursor: pointer;
+}
+
+.menu-botao svg {
+  width: 26px;
+  height: 26px;
+}
+
+.menu-botao .icone-fechar,
+.menu-botao[aria-expanded="true"] .icone-abrir {
+  display: none;
+}
+
+.menu-botao[aria-expanded="true"] .icone-fechar {
+  display: block;
+}
+
+.navegacao {
+  background-color: var(--araucaria-escuro);
+}
+
+.navegacao ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.navegacao.aberta ul {
+  display: block;
+}
+
+.navegacao a {
+  display: block;
+  padding: 0.9rem 1rem;
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 600;
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+}
+
+.navegacao a:hover {
+  background-color: var(--araucaria);
+}
+
+.navegacao a[aria-current="page"] {
+  color: var(--tinta);
+  background-color: var(--dourado);
+}
+
+/* ---------- Cabeçalho da página ---------- */
+.cabeca-pagina {
+  padding-block: 2rem 0.5rem;
+}
+
+.cabeca-pagina p {
+  font-size: 1.15rem;
+  color: var(--cinza-texto);
+}
+
+/* ---------- Controles do diretório ---------- */
+.controles-diretorio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtro label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.filtro select {
+  min-height: 44px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--cinza-texto);
+  border-radius: var(--raio);
+  font: inherit;
+  background-color: var(--branco);
+  color: var(--tinta);
+}
+
+.alternar-visao {
+  display: inline-flex;
+  border: 2px solid var(--araucaria);
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+
+.alternar-visao button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: var(--branco);
+  color: var(--araucaria);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.alternar-visao button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.alternar-visao button[aria-pressed="true"] {
+  background-color: var(--araucaria);
+  color: var(--branco);
+}
+
+.contagem {
+  margin: 0 0 1rem;
+  color: var(--cinza-texto);
+}
+
+.carregando {
+  color: var(--cinza-texto);
+  font-style: italic;
+}
+
+/* ---------- Membros: visão em grade ---------- */
+.membros.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.25rem;
+}
+
+.membros.grade .membro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.25rem;
+  background-color: var(--branco);
+  border: 1px solid var(--linha);
+  border-top: 5px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.membros.grade .membro.nivel-ouro {
+  border-top-color: var(--dourado);
+}
+
+.membros.grade .membro.nivel-prata {
+  border-top-color: #9aa3a8;
+}
+
+.membros.grade .membro img {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 0.5rem;
+}
+
+.membro h2 {
+  margin: 0;
+}
+
+.membro p,
+.membro address {
+  margin: 0;
+}
+
+.membro .categoria {
+  color: var(--cinza-texto);
+  font-size: 0.875rem;
+}
+
+.membro .descricao {
+  margin-block: 0.5rem;
+}
+
+.membro address {
+  font-style: normal;
+}
+
+.membro a {
+  overflow-wrap: anywhere;
+}
+
+.etiqueta-nivel {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.etiqueta-nivel.nivel-3 {
+  background-color: var(--dourado);
+  color: var(--tinta);
+}
+
+.etiqueta-nivel.nivel-2 {
+  background-color: #e3e7e9;
+  color: #333c40;
+}
+
+.etiqueta-nivel.nivel-1 {
+  background-color: #dfeadb;
+  color: var(--araucaria-escuro);
+}
+
+/* ---------- Membros: visão em lista ---------- */
+.membros.lista {
+  background-color: var(--branco);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+
+.membros.lista .membro {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.9rem 1rem;
+  border-top: 1px solid var(--linha);
+}
+
+.membros.lista .membro:first-child {
+  border-top: 0;
+}
+
+.membros.lista .membro:nth-child(even) {
+  background-color: #eef3ef;
+}
+
+.membros.lista .membro img,
+.membros.lista .membro .categoria,
+.membros.lista .membro .descricao {
+  display: none;
+}
+
+.membros.lista .membro h2 {
+  font-size: 1rem;
+}
+
+.membros.lista .etiqueta-nivel {
+  justify-self: start;
+  margin-top: 0.25rem;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  margin-top: 4rem;
+  background-color: var(--araucaria-escuro);
+  color: var(--campo);
+  font-size: 0.9375rem;
+}
+
+.rodape h2 {
+  color: var(--branco);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.rodape a {
+  color: var(--dourado-claro);
+}
+
+.rodape-grade {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2.5rem 1.5rem;
+}
+
+.rodape address {
+  font-style: normal;
+}
+
+.rodape .redes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+.rodape .redes a {
+  display: inline-block;
+  padding-block: 0.6rem;
+}
+
+.rodape .aviso {
+  color: #c9d3cd;
+}
+
+.rodape-base {
+  border-top: 1px solid rgb(255 255 255 / 0.15);
+  padding-block: 1rem;
+}
+
+.rodape-base p {
+  margin: 0.2rem 0;
+  max-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
