@@ -23,8 +23,8 @@ function preencherRodape() {
   // Ano dos direitos autorais
   document.querySelector("#ano-atual").textContent = new Date().getFullYear();
 
-  // Data da última modificação do documento
-  document.querySelector("#ultima-modificacao").textContent = document.lastModified;
+  // Data da última modificação do document
+    document.querySelector("#ultima-modificacao").textContent = new Date(document.lastModified).toLocaleString("pt-BR");
 }
 
 iniciarMenu();
