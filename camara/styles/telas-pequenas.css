@@ -471,6 +471,260 @@ a:hover {
   max-width: none;
 }
 
+/* =========================================================
+   Página inicial
+   ========================================================= */
+h3 {
+  font-family: var(--fonte-titulo);
+  font-stretch: 112%;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin: 0 0 0.25em;
+  color: var(--araucaria-escuro);
+}
+
+/* Imagem principal (hero) */
+.heroi {
+  position: relative;
+  background-color: #9fcbd6;
+}
+
+.heroi img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+.heroi-texto {
+  padding: 1.5rem 1rem 2rem;
+  background-color: var(--branco);
+  border-bottom: 6px solid var(--dourado);
+}
+
+.heroi-texto p {
+  font-size: 1.15rem;
+}
+
+/* Chamada para ação */
+.botao-cta {
+  display: inline-block;
+  min-height: 48px;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--raio);
+  background-color: var(--dourado);
+  color: var(--tinta);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.botao-cta:hover {
+  background-color: #c98f17;
+  color: var(--tinta);
+}
+
+/* Grade de eventos e clima: uma coluna no celular */
+.grade-inicio {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.painel {
+  padding: 1.25rem;
+  background-color: var(--branco);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.lista-eventos,
+.previsao,
+.clima-detalhes,
+.destaque .detalhes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-eventos li {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  gap: 1rem;
+  padding-block: 0.9rem;
+  border-top: 1px solid var(--linha);
+}
+
+.lista-eventos li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.lista-eventos h3 {
+  font-size: 1rem;
+}
+
+.lista-eventos p {
+  margin: 0;
+  color: var(--cinza-texto);
+  font-size: 0.9375rem;
+}
+
+.data-evento {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  height: 4.25rem;
+  border-radius: var(--raio);
+  background-color: var(--araucaria);
+  color: var(--branco);
+  line-height: 1;
+}
+
+.data-evento .dia {
+  font-family: var(--fonte-titulo);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.data-evento .mes {
+  margin-top: 0.2rem;
+  font-size: 0.875rem;
+}
+
+/* Clima */
+.clima-atual {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.25rem 1rem;
+}
+
+.clima-atual p {
+  margin: 0;
+}
+
+.clima-icone {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #dbe9ee;
+}
+
+.clima-temp {
+  font-family: var(--fonte-titulo);
+  font-stretch: 112%;
+  font-weight: 800;
+  font-size: 2.75rem;
+  line-height: 1;
+  color: var(--araucaria-escuro);
+}
+
+.clima-detalhes {
+  grid-column: 1 / -1;
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+}
+
+.clima-detalhes li,
+.previsao li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-block: 0.5rem;
+  border-top: 1px solid var(--linha);
+}
+
+.previsao li:first-child {
+  border-top: 0;
+}
+
+.previsao .dia-semana {
+  flex: 1;
+  font-weight: 600;
+}
+
+.previsao .max {
+  font-weight: 700;
+}
+
+.previsao .min {
+  color: var(--cinza-texto);
+}
+
+.fonte-dados {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: var(--cinza-texto);
+}
+
+/* Membros em destaque */
+.destaques-secao {
+  margin-top: 3rem;
+}
+
+.subtitulo {
+  color: var(--cinza-texto);
+}
+
+.destaques {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.destaque {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0.25rem 1rem;
+  align-content: start;
+  padding: 1.25rem;
+  background-color: var(--branco);
+  border: 1px solid var(--linha);
+  border-top: 5px solid #9aa3a8;
+  border-radius: var(--raio);
+}
+
+.destaque.nivel-ouro {
+  border-top-color: var(--dourado);
+}
+
+.destaque img {
+  grid-row: span 2;
+  width: 72px;
+  height: 72px;
+}
+
+.destaque h3 {
+  align-self: end;
+  margin: 0;
+}
+
+.destaque .categoria {
+  align-self: start;
+  margin: 0;
+  color: var(--cinza-texto);
+  font-size: 0.875rem;
+}
+
+.destaque .detalhes {
+  grid-column: 1 / -1;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--linha);
+  font-size: 0.9375rem;
+}
+
+.destaque .detalhes li {
+  padding-block: 0.15rem;
+}
+
+.destaque .detalhes a {
+  overflow-wrap: anywhere;
+}
+
+.destaque .etiqueta-nivel {
+  display: inline-block;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

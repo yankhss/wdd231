@@ -8,6 +8,23 @@
   .rodape-grade {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* Página inicial: eventos em cima, clima e previsão lado a lado */
+  .grade-inicio {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grade-inicio .eventos {
+    grid-column: 1 / -1;
+  }
+
+  .destaques {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroi-texto {
+    padding-inline: 2rem;
+  }
 }
 
 /* Telas grandes: a partir de 64em (≈ 1024px) */
@@ -48,5 +65,43 @@
   .membros.lista .etiqueta-nivel {
     margin-top: 0;
     align-self: center;
+  }
+
+  /* Página inicial: texto do herói sobre a imagem e três colunas */
+  .heroi img {
+    aspect-ratio: auto;
+    max-height: 34rem;
+  }
+
+  .heroi-texto {
+    position: absolute;
+    left: max(1rem, (100% - var(--largura)) / 2);
+    bottom: 2.5rem;
+    width: 28rem;
+    padding: 1.75rem 2rem 2rem;
+    border-bottom-width: 8px;
+    border-radius: var(--raio);
+    box-shadow: 0 1rem 2.5rem rgb(20 52 38 / 0.25);
+  }
+
+  .heroi-texto h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroi-texto p {
+    font-size: 1rem;
+  }
+
+  .grade-inicio {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    margin-top: 2.5rem;
+  }
+
+  .grade-inicio .eventos {
+    grid-column: auto;
+  }
+
+  .destaques {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
