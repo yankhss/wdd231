@@ -725,6 +725,264 @@ h3 {
   display: inline-block;
 }
 
+/* =========================================================
+   Página de associação e página de agradecimento
+   ========================================================= */
+
+/* Texto lido só por leitores de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Formulário em cima e cartões embaixo no celular */
+.grade-associacao {
+  display: grid;
+  gap: 2rem;
+}
+
+.formulario-associacao fieldset {
+  margin: 0;
+  padding: 1rem 1.25rem 1.5rem;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background-color: var(--branco);
+}
+
+.formulario-associacao legend {
+  padding-inline: 0.5rem;
+  font-family: var(--fonte-titulo);
+  font-stretch: 112%;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--araucaria-escuro);
+}
+
+.nota-obrigatorio {
+  margin-top: 0.25rem;
+  font-size: 0.9375rem;
+  color: var(--cinza-texto);
+}
+
+.obrigatorio {
+  color: #a8201a;
+}
+
+.formulario-associacao label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.formulario-associacao input,
+.formulario-associacao select,
+.formulario-associacao textarea {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 0.3rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--cinza-texto);
+  border-radius: var(--raio);
+  background-color: var(--branco);
+  color: var(--tinta);
+  font: inherit;
+  font-weight: 400;
+}
+
+.formulario-associacao textarea {
+  resize: vertical;
+}
+
+.formulario-associacao input:user-invalid,
+.formulario-associacao select:user-invalid {
+  border: 2px solid #a8201a;
+}
+
+.botao-enviar {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border: 0;
+  border-radius: var(--raio);
+  background-color: var(--dourado);
+  color: var(--tinta);
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao-enviar:hover {
+  background-color: #c98f17;
+}
+
+/* Cartões dos níveis */
+.nivel-np {
+  --cor-nivel: var(--araucaria);
+}
+
+.nivel-bronze {
+  --cor-nivel: #a0612f;
+}
+
+.nivel-prata {
+  --cor-nivel: #9aa3a8;
+}
+
+.nivel-ouro {
+  --cor-nivel: var(--dourado);
+}
+
+.cartoes-nivel {
+  display: grid;
+  gap: 1rem;
+}
+
+.cartao-nivel {
+  padding: 1.25rem;
+  background-color: var(--branco);
+  border: 1px solid var(--linha);
+  border-top: 5px solid var(--cor-nivel);
+  border-radius: var(--raio);
+  animation: surgir 700ms ease-out both;
+}
+
+/* Os cartões aparecem um depois do outro quando a página carrega */
+.cartao-nivel:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.cartao-nivel:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.cartao-nivel:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cartao-nivel p {
+  margin: 0 0 0.75rem;
+  color: var(--cinza-texto);
+}
+
+.ver-beneficios {
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--araucaria);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+.ver-beneficios:hover {
+  color: var(--araucaria-escuro);
+  text-decoration-thickness: 2px;
+}
+
+/* Modais com os benefícios */
+.modal-nivel {
+  width: 100%;
+  max-width: min(32rem, 92vw);
+  padding: 0;
+  border: 0;
+  border-top: 6px solid var(--cor-nivel);
+  border-radius: var(--raio);
+  color: var(--tinta);
+  box-shadow: 0 1rem 2.5rem rgb(20 52 38 / 0.35);
+}
+
+.modal-nivel::backdrop {
+  background-color: rgb(20 52 38 / 0.7);
+}
+
+.modal-conteudo {
+  padding: 1.5rem;
+}
+
+.taxa {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.modal-conteudo ul {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.modal-conteudo li + li {
+  margin-top: 0.35rem;
+}
+
+.fechar-modal {
+  min-height: 44px;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: var(--raio);
+  background-color: var(--araucaria);
+  color: var(--branco);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.fechar-modal:hover {
+  background-color: var(--araucaria-escuro);
+}
+
+/* Agradecimento: dados enviados */
+.resumo-pedido {
+  max-width: 42rem;
+}
+
+.dados-pedido {
+  margin: 0;
+}
+
+.dados-pedido dt {
+  margin-top: 0.75rem;
+  font-weight: 700;
+  color: var(--araucaria-escuro);
+}
+
+.dados-pedido dt:first-child {
+  margin-top: 0;
+}
+
+.dados-pedido dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.voltar {
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

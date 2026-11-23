@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Associe-se | Câmara de Comércio de Ponta Grossa</title>
+  <meta name="description" content="Faça o pedido de associação à Câmara de Comércio de Ponta Grossa e conheça os benefícios dos níveis NP, Bronze, Prata e Ouro.">
+  <meta name="author" content="Yankha Lindiara Maria Pereira Rodrigues Lima">
+
+  <!-- Metadados para redes sociais (Open Graph / Facebook) -->
+  <meta property="og:title" content="Associe-se | Câmara de Comércio de Ponta Grossa">
+  <meta property="og:description" content="Pedido de associação e benefícios dos níveis NP, Bronze, Prata e Ouro da Câmara de Comércio de Ponta Grossa.">
+  <meta property="og:image" content="https://yankhss.github.io/wdd231/camara/images/og-camara.jpg">
+  <meta property="og:url" content="https://yankhss.github.io/wdd231/camara/associacao.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- CSS: normalização primeiro, depois telas pequenas e telas grandes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,700..800&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="styles/telas-pequenas.css">
+  <link rel="stylesheet" href="styles/telas-grandes.css">
+</head>
+<body>
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <a class="marca" href="index.html">
+        <img src="images/favicon.svg" alt="" width="48" height="48">
+        <span class="marca-nome">Câmara de Comércio <span>de Ponta Grossa, Paraná</span></span>
+      </a>
+      <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="navegacao" aria-label="Abrir menu">
+        <svg class="icone-abrir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icone-fechar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="navegacao" id="navegacao" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="diretorio.html">Diretório</a></li>
+        <li><a href="associacao.html" aria-current="page">Associe-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container">
+    <header class="cabeca-pagina">
+      <h1>Associe-se à Câmara</h1>
+      <p>Preencha o pedido para fazer parte da rede de empresas e organizações de Ponta Grossa. A equipe analisa cada pedido e responde em até cinco dias úteis.</p>
+    </header>
+
+    <div class="grade-associacao">
+      <form class="formulario-associacao" action="agradecimento.html" method="get">
+        <fieldset>
+          <legend>Pedido de associação</legend>
+          <p class="nota-obrigatorio">Campos com <span class="obrigatorio" aria-hidden="true">*</span> são obrigatórios.</p>
+
+          <label>Nome <span class="obrigatorio" aria-hidden="true">*</span>
+            <input type="text" name="nome" title="Digite seu nome" autocomplete="given-name" required>
+          </label>
+
+          <label>Sobrenome <span class="obrigatorio" aria-hidden="true">*</span>
+            <input type="text" name="sobrenome" title="Digite seu sobrenome" autocomplete="family-name" required>
+          </label>
+
+          <label>Cargo na organização
+            <input type="text" name="cargo" title="Use apenas letras, hífens e espaços, com no mínimo 7 caracteres" autocomplete="organization-title" pattern="[A-Za-zÀ-ÖØ-öø-ÿ \-]{7,}">
+          </label>
+
+          <label>E-mail <span class="obrigatorio" aria-hidden="true">*</span>
+            <input type="email" name="email" title="Digite um endereço de e-mail válido" autocomplete="email" placeholder="nome@empresa.com.br" required>
+          </label>
+
+          <label>Celular <span class="obrigatorio" aria-hidden="true">*</span>
+            <input type="tel" name="celular" title="Digite seu número de celular com DDD" autocomplete="tel" required>
+          </label>
+
+          <label>Nome da empresa ou organização <span class="obrigatorio" aria-hidden="true">*</span>
+            <input type="text" name="organizacao" title="Digite o nome da sua empresa ou organização" autocomplete="organization" required>
+          </label>
+
+          <label>Nível de associação <span class="obrigatorio" aria-hidden="true">*</span>
+            <select name="nivel" title="Escolha o nível de associação" required>
+              <option value="" disabled selected>Selecione um nível</option>
+              <option value="np">Associação NP (sem fins lucrativos, sem taxa)</option>
+              <option value="bronze">Associação Bronze</option>
+              <option value="silver">Associação Prata</option>
+              <option value="gold">Associação Ouro</option>
+            </select>
+          </label>
+
+          <label>Descrição da empresa ou organização
+            <textarea name="descricao" rows="4" title="Conte em poucas linhas o que a sua empresa ou organização faz"></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <button type="submit" class="botao-enviar">Enviar pedido de associação</button>
+        </fieldset>
+      </form>
+
+      <section class="niveis" aria-labelledby="titulo-niveis">
+        <h2 id="titulo-niveis">Níveis de associação</h2>
+        <div class="cartoes-nivel">
+          <article class="cartao-nivel nivel-np">
+            <h3>Associação NP</h3>
+            <p>Para organizações sem fins lucrativos. Sem taxa.</p>
+            <button type="button" class="ver-beneficios" data-modal="modal-np">Ver benefícios<span class="sr-only"> da Associação NP</span></button>
+          </article>
+
+          <article class="cartao-nivel nivel-bronze">
+            <h3>Associação Bronze</h3>
+            <p>R$ 50 por mês.</p>
+            <button type="button" class="ver-beneficios" data-modal="modal-bronze">Ver benefícios<span class="sr-only"> da Associação Bronze</span></button>
+          </article>
+
+          <article class="cartao-nivel nivel-prata">
+            <h3>Associação Prata</h3>
+            <p>R$ 120 por mês.</p>
+            <button type="button" class="ver-beneficios" data-modal="modal-prata">Ver benefícios<span class="sr-only"> da Associação Prata</span></button>
+          </article>
+
+          <article class="cartao-nivel nivel-ouro">
+            <h3>Associação Ouro</h3>
+            <p>R$ 250 por mês.</p>
+            <button type="button" class="ver-beneficios" data-modal="modal-ouro">Ver benefícios<span class="sr-only"> da Associação Ouro</span></button>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <dialog id="modal-np" class="modal-nivel nivel-np" aria-labelledby="modal-np-titulo">
+      <div class="modal-conteudo">
+        <h2 id="modal-np-titulo">Associação NP</h2>
+        <p class="taxa">Sem taxa</p>
+        <ul>
+          <li>Perfil da organização no diretório de membros</li>
+          <li>Convite para os cafés de negócios mensais</li>
+          <li>Boletim informativo da Câmara por e-mail</li>
+        </ul>
+        <button type="button" class="fechar-modal">Fechar</button>
+      </div>
+    </dialog>
+
+    <dialog id="modal-bronze" class="modal-nivel nivel-bronze" aria-labelledby="modal-bronze-titulo">
+      <div class="modal-conteudo">
+        <h2 id="modal-bronze-titulo">Associação Bronze</h2>
+        <p class="taxa">R$ 50 por mês</p>
+        <ul>
+          <li>Todos os benefícios da Associação NP</li>
+          <li>Uma oficina por trimestre (vendas, gestão ou atendimento)</li>
+          <li>10% de desconto nos eventos da Câmara</li>
+          <li>Estande compartilhado na feira anual de negócios</li>
+        </ul>
+        <button type="button" class="fechar-modal">Fechar</button>
+      </div>
+    </dialog>
+
+    <dialog id="modal-prata" class="modal-nivel nivel-prata" aria-labelledby="modal-prata-titulo">
+      <div class="modal-conteudo">
+        <h2 id="modal-prata-titulo">Associação Prata</h2>
+        <p class="taxa">R$ 120 por mês</p>
+        <ul>
+          <li>Todos os benefícios da Associação Bronze</li>
+          <li>Participação no sorteio de membros em destaque da página inicial</li>
+          <li>Duas oficinas por trimestre</li>
+          <li>20% de desconto nos eventos da Câmara</li>
+          <li>Uma publicação por mês nas redes sociais da Câmara</li>
+        </ul>
+        <button type="button" class="fechar-modal">Fechar</button>
+      </div>
+    </dialog>
+
+    <dialog id="modal-ouro" class="modal-nivel nivel-ouro" aria-labelledby="modal-ouro-titulo">
+      <div class="modal-conteudo">
+        <h2 id="modal-ouro-titulo">Associação Ouro</h2>
+        <p class="taxa">R$ 250 por mês</p>
+        <ul>
+          <li>Todos os benefícios da Associação Prata</li>
+          <li>Selo Ouro no diretório e nos destaques da página inicial</li>
+          <li>Entrada gratuita em todos os eventos da Câmara</li>
+          <li>Oficinas sem limite durante o ano</li>
+          <li>Estande próprio na feira anual de negócios</li>
+          <li>Convite para o almoço de fim de ano com lideranças empresariais da cidade</li>
+        </ul>
+        <button type="button" class="fechar-modal">Fechar</button>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-grade">
+      <section>
+        <h2>Câmara de Comércio de Ponta Grossa</h2>
+        <address>
+          Rua Comendador Miró, 100 – Centro<br>
+          Ponta Grossa – PR, 84010-000<br>
+          <a href="tel:+554230000100">(42) 3000-0100</a><br>
+          <a href="mailto:contato@camarapg.example">contato@camarapg.example</a>
+        </address>
+      </section>
+      <section>
+        <h2>Acompanhe</h2>
+        <ul class="redes">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sobre este site</h2>
+        <p>Yankha Lindiara Maria Pereira Rodrigues Lima<br>WDD 231 – Front-end Web Development I</p>
+        <p class="aviso">Projeto acadêmico. Empresas e contatos são fictícios.</p>
+      </section>
+    </div>
+    <div class="rodape-base">
+      <div class="container">
+        <p>&copy; <span id="ano-atual">2026</span> Câmara de Comércio de Ponta Grossa</p>
+        <p>Última modificação: <span id="ultima-modificacao"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/associacao.js"></script>
+</body>
+</html>

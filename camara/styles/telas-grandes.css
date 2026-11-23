@@ -25,6 +25,31 @@
   .heroi-texto {
     padding-inline: 2rem;
   }
+
+  /* Associação: cartões dos níveis em duas colunas */
+  .cartoes-nivel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Agradecimento: rótulo à esquerda e valor à direita */
+  .dados-pedido {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 1.5rem;
+  }
+
+  .dados-pedido dt,
+  .dados-pedido dd {
+    margin: 0;
+    padding-block: 0.5rem;
+    border-top: 1px solid var(--linha);
+  }
+
+  .dados-pedido dt:first-child,
+  .dados-pedido dt:first-child + dd {
+    padding-top: 0;
+    border-top: 0;
+  }
 }
 
 /* Telas grandes: a partir de 64em (≈ 1024px) */
@@ -103,5 +128,19 @@
 
   .destaques {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Associação: cartões dos níveis à direita do formulário */
+  .grade-associacao {
+    grid-template-columns: minmax(0, 3fr) minmax(17rem, 2fr);
+    align-items: start;
+  }
+
+  .cartoes-nivel {
+    grid-template-columns: 1fr;
+  }
+
+  .botao-enviar {
+    width: auto;
   }
 }
